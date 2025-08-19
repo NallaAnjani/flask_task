@@ -60,7 +60,7 @@ venv\Scripts\activate
 pip install flask flask_sqlalchemy flask_jwt_extended pymysql
 --------
 step7:
-📌 Step 7: Test Endpoints
+ Step 7: Test Endpoints
 
 Use Postman or cURL.
 
@@ -81,14 +81,14 @@ flyway -url=jdbc:mysql://localhost:3306/student_db -user=root -password=yourpass
 step9:
 
 
-🚀 How to Use Postman for Your Project
-✅ Step 1: Install Postman
+ How to Use Postman for Your Project
+ Step 1: Install Postman
 
 Download from 👉 https://www.postman.com/downloads/
 
 Install and open it.
 
-✅ Step 2: Create a New Collection
+ Step 2: Create a New Collection
 
 Open Postman.
 
@@ -96,7 +96,7 @@ Click Collections → New Collection → name it Student Grade Management System
 
 Inside this collection, we’ll add requests for students, subjects, teachers, grades, reports, and auth.
 
-✅ Step 3: Add First Request – Login (JWT)
+ Step 3: Add First Request – Login (JWT)
 
 Click Add Request → Name: Login.
 
@@ -117,14 +117,14 @@ Go to Body → raw → JSON and paste:
 
 Click Send.
 
-✅ You’ll get a response with a JWT token like:
+ You’ll get a response with a JWT token like:
 
 {
   "access_token": "eyJ0eXAiOiJKV1QiLCJh..."
 }
 
 
-👉 Copy this token (we’ll use it for protected routes).
+ Copy this token (we’ll use it for protected routes).
 
 -----------------------
 step10:
@@ -154,11 +154,11 @@ Go to Body → raw → JSON:
 
 Click Send.
 
-✅ Response:
+ Response:
 
 { "message": "Student added" }
 
-✅ Step 5: Get Students
+Step 5: Get Students
 
 New request → Name: Get Students
 
@@ -180,7 +180,7 @@ Click Send → Response:
   { "id": 1, "name": "Anjani" }
 ]
 
-✅ Step 6: Add Subject
+ Step 6: Add Subject
 
 Create request → Name: Add Subject
 
@@ -200,11 +200,11 @@ Body → raw → JSON:
 }
 
 
-✅ Response:
+ Response:
 
 { "message": "Subject added" }
 
-✅ Step 7: Add Grade
+ Step 7: Add Grade
 
 New request → Name: Add Grade
 
@@ -226,11 +226,11 @@ Body → raw → JSON:
 }
 
 
-✅ Response:
+ Response:
 
 { "message": "Grade added" }
 
-✅ Step 8: Get Report Card
+Step 8: Get Report Card
 
 New request → Name: Get Report Card
 
@@ -243,7 +243,7 @@ http://127.0.0.1:5000/grades/student/1/report-card
 
 Headers → add JWT token.
 
-✅ Response:
+ Response:
 
 {
   "student_id": 1,
